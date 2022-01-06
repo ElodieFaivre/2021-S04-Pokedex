@@ -1,0 +1,243 @@
+body {
+    background-color: #C14040;
+    box-sizing: border-box;
+    color:white;
+    font-family: 'Bree Serif', serif;    
+}
+
+header {
+    background-color: #EFE3E3;
+    margin : 0.5rem 1rem;
+    padding : 2rem 1rem;
+    border-radius:20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#C14040;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-left : 0.3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size:2rem;
+}
+
+h2 {
+    text-align:center;
+    font-size: 1.3rem;;
+}
+
+.container {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container__element {
+    background-color: #982C2C;
+    border-radius:20px ;
+    padding:1rem;
+    margin:1rem;
+    width:21%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__element__title {
+    color:white;
+    font-size:1.3rem;
+    margin:0.5rem 0;
+}
+
+.details_page{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin:1rem;
+}
+
+.details_title{
+    width:100%;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.details_h3{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.details_h4{
+    font-size: 2rem;
+    margin : 2rem 0;
+}
+
+.details_img{
+    width :25%;
+}
+
+.details_container{
+    background-color: #AB3838;
+    border-radius : 20px;
+   padding : 2rem 1rem;
+   width :60%;
+}
+
+.details_link_bottom{
+    display: inline-block;
+   width:100%;
+   text-align:center;
+   margin : 1rem;
+   color:white;
+}
+
+.details_stats{
+    display: flex;
+    flex-direction: column;
+}
+
+.details_stats_line{
+    margin : 0.3rem 0;
+    font-weight: bold;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.details_stats_line_part1{
+    width:30%;
+}
+.details_stats_line_part2{
+    width:10%;
+}
+
+.trackBarTotal{
+    width:50%;
+    height:1.5rem;
+    display:flex;
+    flex-direction: row;
+    border-radius: 5px;
+}
+
+.trackBarPart1{
+    background-color: white;
+    height:100%;
+    border-radius:5px 0 0 5px;
+}
+.trackBarPart2{
+    background-color:#632B2B;
+    height:100%;
+    width:100%;
+    border-radius: 0 5px 5px 0;
+}
+.category_container{
+    display:flex;
+    margin:1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.category_element{
+    width:30%;
+    margin:0.2rem;
+    padding : 0.5rem;
+    text-align:center;
+    border-radius: 5px;
+}
+
+.category {
+    padding:1rem 0.3rem;
+    border-radius:5px;
+    margin:2rem 0;
+    background-color: aquamarine;
+}
+
+.category-acier{
+    background-color: #AAAABB;
+}
+
+.category-combat{
+    background-color: #BB5544;
+}
+
+.category-dragon{
+    background-color: #7766EE;
+}
+.category-eau{
+    background-color: #3399FF;
+}
+.category-électrik{
+    background-color: #FFBB33;
+}
+.category-feu{
+    background-color: #FF4422;
+}
+.category-glace{
+    background-color: #77DDFF;
+}
+.category-insecte{
+    background-color: #AABB22;
+}
+.category-normal{
+    background-color: #BBAABB;
+}
+.category-plante{
+    background-color: #77CC55;
+}
+.category-poison{
+    background-color: #AA5599;
+}
+.category-psy{
+    background-color: #FF5599;
+}
+.category-roche{
+    background-color: #BBAA66;
+}
+.category-sol{
+    background-color: #DDBB55;
+}
+.category-spectre{
+    background-color: #6666BB;
+}
+.category-tenebres{
+    background-color: #665544;
+}
+.category-vol{
+    background-color: #6699FF;
+}
+
+.game_container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.game_container_img{
+    width:25%;
+}
+.game_text{
+    margin:1rem;
+}
+
+.replay_button{
+    padding:1rem 2rem;
+    margin: 1rem;
+    background-color: #982C2C;
+    border-radius: 5px;
+}
+
+.bravo{
+    font-size: 2rem;
+}

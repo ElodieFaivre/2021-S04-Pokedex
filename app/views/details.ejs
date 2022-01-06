@@ -1,0 +1,28 @@
+<%- include("./partials/header") %>
+<main class="details_page">
+<h2 class="details_title">Détails de <%=pokemon.nom%></h2>
+
+<img class="details_img" src="/img/<%=pokemon.numero%>.png" alt="image de <%=pokemon.nom%>">
+
+<div class="details_container">
+    <h3 class="details_h3" >#<%=pokemon.numero%> <%=pokemon.nom%></h3>
+    <div class="categories">
+    <% for(pokemon.type of pokemon.types){%>
+        <span class="category "><%=pokemon.type%></span>
+    <%}%>
+    </div>
+    <h4 class="details_h4" >Statistiques</h4>
+    <div class="details_stats">
+        
+        <div class="details_stats_line"><span class="details_stats_line_part1">PV</span><span class="details_stats_line_part2"><%=pokemon.pv%></span><div class="trackBarTotal"><div class="trackBarPart1" style="width:<%=Math.round(pokemon.pv/255*100)%>%"></div><div class="trackBarPart2"></div></div></div>
+        <div class="details_stats_line"><span class="details_stats_line_part1">Attaque</span><span class="details_stats_line_part2"><%=pokemon.attaque%></span><div class="trackBarTotal"><div class="trackBarPart1" style="width:<%=Math.round(pokemon.attaque/255*100)%>%"></div><div class="trackBarPart2"></div></div></div>
+        <div class="details_stats_line"><span class="details_stats_line_part1">Défense</span> <span class="details_stats_line_part2"><%=pokemon.defense%></span><div class="trackBarTotal"><div class="trackBarPart1" style="width:<%=Math.round(pokemon.defense/255*100)%>%"></div><div class="trackBarPart2"></div></div></div>
+        <div class="details_stats_line"><span class="details_stats_line_part1">Attaque Spé</span> <span class="details_stats_line_part2"><%=pokemon.attaque_spe%></span><div class="trackBarTotal"><div class="trackBarPart1" style="width:<%=Math.round(pokemon.attaque_spe/255*100)%>%"></div><div class="trackBarPart2"></div></div></div>
+        <div class="details_stats_line"><span class="details_stats_line_part1">Défense Spé</span> <span class="details_stats_line_part2"><%=pokemon.defense_spe%></span><div class="trackBarTotal"><div class="trackBarPart1" style="width:<%=Math.round(pokemon.defense_spe/255*100)%>%"></div><div class="trackBarPart2"></div></div></div>
+        <div class="details_stats_line"><span class="details_stats_line_part1">Vitesse</span><span class="details_stats_line_part2"><%=pokemon.vitesse%></span><div class="trackBarTotal"><div class="trackBarPart1" style="width:<%=Math.round(pokemon.vitesse/255*100)%>%"></div><div class="trackBarPart2"></div></div></div>
+    </div>
+</div>
+
+<a class="link details_link_bottom" href="/">Revenir à la liste</a>
+
+</main>
