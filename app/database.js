@@ -1,12 +1,9 @@
-// 1. require le module
-const pg = require('pg');
+const {Sequelize} = require('sequelize');
 
-console.log(process.env.PG_URL);
-// 2. Créer un client
-const client = new pg.Client(process.env.PG_URL);
+const sequelize = new Sequelize(process.env.PG_URL,{
+    define: {
+      timestamps: false
+    },
+});
 
-// 3. Connecter le client
-client.connect();
-
-// 4. Exporter le client connecté
-module.exports = client;
+module.exports = sequelize;
