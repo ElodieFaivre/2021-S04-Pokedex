@@ -15,7 +15,7 @@ CREATE TABLE "pokemon" (
   "attaque_spe" int NOT NULL,
   "defense_spe" int NOT NULL,
   "vitesse" int NOT NULL,
-  "numero" int NOT NULL UNIQUE
+  "numero" int NOT NULL UNIQUE 
 );
 
 --
@@ -211,8 +211,8 @@ INSERT INTO "type" ("id", "name", "color") VALUES
 --
 
 CREATE TABLE "pokemon_type" (
-  "pokemon_numero" integer REFERENCES "pokemon"("numero"),
-  "type_id" integer REFERENCES "type"("id"),
+  "pokemon_numero" integer NOT NULL REFERENCES "pokemon"("numero"),
+  "type_id" integer NOT NULL REFERENCES "type"("id"),
   PRIMARY KEY ("pokemon_numero", "type_id")
 
 );

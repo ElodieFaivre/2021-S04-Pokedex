@@ -38,12 +38,18 @@ const mainController = {
   detailsPage: async (req, res) => {
     try {
       const pokemon = await Pokemon.findOne({
-        include : ['types'],
-        where : {
-          numero : req.params.id
-        } 
+        include: ['types'],
+        where: {
+          numero: req.params.id
+        }
       });
-      console.log(pokemon);
+      // console.log('ICCIIII')
+      // console.log(pokemon.types)
+      // for (const type of pokemon.types) {
+      //   console.log('ICCII')
+      //   console.log(type)
+      // }
+
       res.render('details', {
         pokemon
       });
@@ -57,17 +63,21 @@ const mainController = {
 
   filteredByType: async (req, res) => {
     try {
-      const pokelist = await Type.findAll({
+      const pokelistByType = await Type.findAll({
         include: ['pokemons'],
         where: {
-          name:req.params.category
+          name: req.params.category
         }
       }
-
+      
       )
+      console.log(pokelistByType);
+      const pokelist = pokelistByType[0].pokemons;
+
+      console.log(pokelist);
       // req.params.category);
       console.log(req.params.category);
-      console.log(pokelist);
+      
 
       res.render('index', {
         pokelist

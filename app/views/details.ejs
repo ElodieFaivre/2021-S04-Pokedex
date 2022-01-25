@@ -7,8 +7,8 @@
 <div class="details_container">
     <h3 class="details_h3" >#<%=pokemon.numero%> <%=pokemon.nom%></h3>
     <div class="categories">
-    <% for(pokemon.type of pokemon.types){%>
-        <span class="category category-<%=pokemon.type.toLowerCase()%> "><%=pokemon.type%></span>
+    <% for(type of pokemon.types){%>
+        <span class="category category-<%=type.name.toLowerCase()%> "><%=type.name%></span>
     <%}%>
     </div>
     <h4 class="details_h4" >Statistiques</h4>
