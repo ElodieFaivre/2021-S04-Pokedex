@@ -1,11 +1,18 @@
 const Pokemon = require('./pokemon');
 const Type = require('./type');
 
+// Pokemon.belongsToMany(Type, {
+//     as:"types",
+//     through : "pokemon_type", // "via la table de liaison qui s'appelle ..."
+//     foreignKey: 'pokemon_numero',
+//     otherKey:'type_id', 
+// });
+
 Pokemon.belongsToMany(Type, {
     as:"types",
     through : "pokemon_type", // "via la table de liaison qui s'appelle ..."
-    foreignKey: 'pokemon_numero',
-    otherKey:'type_id', 
+    sourceKey:"numero",
+    otherKey:"type_id"
 });
 
 Type.belongsToMany(Pokemon, {
