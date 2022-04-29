@@ -8,6 +8,8 @@ Using EJS, one branch with classical datamapper, one branch using ORM Sequelize
 
 ## How to start ?
 
-npm i 
-
-npm start
+1. Create a BDD
+2. Create your .env with BDD path
+3. Run SQL script in app/data/pokedex.sql
+4. npm i 
+5. npm start
