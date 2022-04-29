@@ -9,4 +9,5 @@ Using EJS, one branch with classical datamapper, one branch using ORM Sequelize
 ## How to start ?
 
 npm i 
+
 npm start
